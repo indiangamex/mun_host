@@ -1,0 +1,41 @@
+{% extends 'base2.html' %}
+{% block body %}
+{% load static %}
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+      <strong>{{ message }}</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+{% endif %}
+<center>
+<img src="{% static 'img/c3.jpg' %}" height="350px" width="100%">
+</center>
+<br>
+<form method="post" action="/idelegate">
+    {% csrf_token %}
+  <div class="container">
+    <div class="mb-2">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+  </div>
+  <div class="mb-2">
+    <label for="phone">Phone Number</label>
+    <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your Phone Number">
+  </div>
+  <div class="mb-2">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+  </div>
+  <div class="mb-2">
+    <label for="desc">Please write your query here...</label>
+    <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-success">Success</button>
+  &nbsp;&nbsp;
+  <a href="/"><button type="button" class="btn btn-primary">Home</button></a>
+  </div>
+<form>
+{% endblock body %}

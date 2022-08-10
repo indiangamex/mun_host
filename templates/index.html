@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Innerve MUN</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img src="{% static 'img/mun.png'%}" class="bi me-2" width="150" height="70">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><button type="button" class="btn btn-outline-primary">Home</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><button type="button" class="btn btn-outline-primary">About Us</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cm"><button type="button" class="btn btn-outline-primary">Committees</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog"><button type="button" class="btn btn-outline-primary">Blogs</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reg"><button type="button" class="btn btn-outline-warning">Registration</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact" target="_blank"><button type="button" class="btn btn-outline-warning">Contact Us</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#venue"><button type="button" class="btn btn-outline-info">Venue</button></a>
+            </li>
+            </ul>
+            <img src="{% static 'img/mvn.jpg'%}" class="bi me-2" width="120" height="60">
+          </div>
+        </div>
+      </nav>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'img/mun1.jpg' %}" class="d-block w-100" height="602px" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/mun2.jpg' %}" class="d-block w-100" height="602px" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/mun1.jpg' %}" class="d-block w-100" height="602px" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+<center>
+<div class="container-fluid py-5 my-4">
+        <h1 class="display-5 fw-bold">Welcome Letter</h1>
+        <p class="col-md-8 fs-4"><strong>“ I raise up my voice not so I can shout but so that those without a voice can be
+          heard…we cannot succeed when half of us are held back.”<br>- Malala Yousafzai</strong>
+<br>
+<br>
+In a world where millions of voices coexist with different ideologies and credences, everyone has the right to voice their
+opinions and be heard without censors. Our world is quickly evolving, with new crises hitting different frontiers of our society
+ each day. Our youth....
+</p>
+<br>
+        <a href="/letter"><button class="btn btn-primary btn-lg" type="button">Read More</button></a>
+<a id="cm"></a>
+</div>
+</center>
+<div class="album py-5 bg-dark">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="{% static 'img/1.png'%}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <div class="card-body">
+              <h3><strong>United Nations General Assembly</strong></h3>
+              <p class="card-text">UNGA is one of the six principal organs of the United Nations.The UN General
+                 Assembly is the main policy-making organ...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="/unga" target="_blank"><button type="button" class="btn btn-outline-primary">Read More</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static 'img/2.png'%}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <div class="card-body">
+              <h3><strong>United Nations Human Rights Council</strong></h3>
+              <p class="card-text">The Human Rights Council is an inter-governmental body within the United Nations
+                system made up of 47 States...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="/unhrc"><button type="button" class="btn btn-outline-primary">Read More</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static 'img/3.png'%}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <div class="card-body">
+              <h3><strong>All India Political Party Meet</strong></h3>
+              <p class="card-text">The All India Political Parties Meet is a venture to emulate political realities by
+                stimulating the various levels of policy...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="/aippm" target="_blank"><button type="button" class="btn btn-outline-primary">Read More</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static 'img/4.png'%}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <div class="card-body">
+              <h3><strong>Crisis Committee</strong></h3>
+              <p class="card-text">A crisis committee is a decision making body that has more power than a traditional committee...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="/crisis" target="_blank"><button type="button" class="btn btn-outline-primary">Read More</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static 'img/5.png'%}" class="bd-placeholder-img card-img-top" width="30%" height="225">
+            <div class="card-body">
+              <h3><strong>International Press</strong></h3>
+              <p class="card-text">Everyone has the right to freedom of opinion and expression this right includes
+                 freedom to hold opinions...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="/ip" target="_blank"><button type="button" class="btn btn-outline-primary">Read More</button></a>
+                <a id="reg"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="back3">
+    <h1 class="h12">Registration</h1>
+    <br><br>
+  <center>
+    <a id="blog"></a>
+    <a href="/idelegate"><button type="button" class="btn btn-secondary btn-lg">Individual Delegation Registration</button></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/sdelegate"><button type="button" class="btn btn-secondary btn-lg">School Delegation Registration</button></a>
+  </center>
+  <br><br>
+  </div>
+  <div class="back1">
+  <div class="row featurette">
+        <div class="col-md-7">
+          <div class="h2m">
+          <h2 class="featurette-heading fw-normal lh-1">Our Principal</h2>
+          <h4>Ms Agalya Venkatesh</h4>
+          <br>
+          <p><font color="#43A6C6"><strong>“Education is the manifestation of excellence inherent in every man.”<br>- Ms Agalya Venkatesh</p></font></strong>
+          <p class="lead">We make a very honest and sincere endeavor to impart education for the all-round development of students i.e. physical, emotional, spiritual and intellectual in a congenial atmosphere under the guidance of a competent, vigilant, aware and highly qualified team to steer the institutes to the pinnacle of success.</p>
+  <p><a class="btn btn-secondary" href="https://www.mvneducation.com/about-principals-sector-17" target="_blank">Read More »</a></p>
+        </div>
+        </div>
+        <div class="col-md-5">
+          <img src="{% static 'img/ag.png'%}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="900">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bm">
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            <h2>What is Innerve ?</h2>
+            <p><font color="#43A6C6"><strong>Change will not come if we wait for some other time. We are the ones we've been waiting for. We are the change that we seek"<br>– Barack Obama</font></strong>
+  <br>
+  <br>
+  Model United Nations or Model UN or MUN is an educational simulation in which students can learn about diplomacy, international relations, and the United Nations.
+  </p>
+            <button class="btn btn-outline-light" type="button">Read More</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            <h2>Why Innerve ?</h2>
+            <p><font color="#43A6C6"><strong>Get an experience of a lifetime in this 2 day event -</font></strong><br><br>
+1.	massive networking<br>
+2.	improve your public speaking<br>
+3.	learn diplomacy<br>
+4.	enhance your leadership skills<br>
+5.	certificates and awards for winners<br>
+</p>
+<a id="about"></a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="back2">
+    <h1 class="h12">Milestone</h1>
+    <br>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h1 class="h11"><font style="color:#106cfc;margin-right:55px;">3</font> Successfull Editions</h1>
+        </div>
+        <div class="col">
+          <h1 class="h11"><font style="color:#106cfc;margin-right:10px;">2000+</font> Delegates Registered</h1>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col">
+          <h1 class="h11"><font style="color:#106cfc;margin-right:10px;">40+</font> Committees Simulated</h1>
+        </div>
+        <div class="col">
+          <h1 class="h11"><font style="color:#106cfc;margin-right:30px;">500+</font> Delegates Trained</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="back2">
+<h1 class="h12">Gallery</h1>
+<center>
+<br>
+<div class="wrapper">
+<div class="media">
+<div class="layer">
+    <p class="p1">Innerve MUN 2019</p>
+  </div>
+<img src="{% static 'img/3m.jpeg'%}" height="280px" width="1000px">
+</div>
+ <div class="media">
+<div class="layer">
+    <p class="p1">Innerve MUN 2020</p>
+  </div>
+<img src="{% static 'img/1m.jpeg'%}" height="280px" width="1000px">
+</div>
+   <div class="media">
+<div class="layer">
+    <p class="p1">Innerve MUN 2021</p>
+  </div>
+<img src="{% static 'img/2m.jpeg'%}" height="280px" width="1000px">
+</div>
+</div>
+</center>
+<a id="venue"></a>
+</div>
+<div class="back3">
+  <h1 class="h12">Venue</h1>
+  <br><br>
+  <center>
+    <a id="reg"></a>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.4063218665015!2d77.326782!3d28.406993999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdda94c844b45%3A0xc87f4eae1718a7e5!2sModern%20Vidya%20Niketan!5e0!3m2!1sen!2sin!4v1659427806030!5m2!1sen!2sin"
+     width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     <br><br>
+</div>
+  <footer>
+    <div class="fback">
+      <center>
+      <img src="{% static 'img/mun.png'%}" class="bi me-2" width="340" height="180">
+      <br>
+      <br>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <hr size="5" color="#fff">
+        <p><font color="#fff"><strong>© 2022 Innerve MUN 2022 | Design by Nikhil Kumar | Developed by Rangan Raj Ghosh</strong></font></p>
+      <hr size="5" color="#fff">
+        <br>
+    </div>
+    </center>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
